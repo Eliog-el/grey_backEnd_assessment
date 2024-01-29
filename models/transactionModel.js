@@ -59,44 +59,10 @@ const transactionSchema = new mongoose.Schema({
     { timeStamps: true }
 );
 
-// userSchema.methods.generateAuthToken = function () {
-//   const token = jwt.sign(
-//     { _id: this._id, isAdmin: this.isAdmin },
-//     config.get("jwtPrivateKey")
-//   );
-//   return token;
-// };
 
 const Transaction = mongoose.model("Transaction", transactionSchema);
 
-// function validateUser(user) {
-//     const schema = Joi.object({
-//         first_name: Joi.string().min(3).max(50).required(),
-//         last_name: Joi.string().min(3).max(50).required(),
-//         phone_number: Joi.string.required(),
-//         email: Joi.string().min(3).max(255).required().email(),
-//         password: passwordComplexity(complexityOption).required(),
-//     });
-
-//     return schema.validate(user);
-// }
 
 
 exports.Transaction = Transaction;
-// exports.validate = validateUser;
 
-/**
- * user_uuid
-transaction_type
-narration
-amount
-transaction_date
-reference
-balance
-bank_code
-account_number
-transaction_to
-created_at
-updated_at
- * 
- */

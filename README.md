@@ -11,24 +11,14 @@ $ npm install
 ## Running the app
 
 ```bash
-# development
-$ npm run startdev
-
 # watch mode
-$ pnpm run start:dev
+$ npm run startdev
 
 ## Test
 
 ```bash
 # unit tests
-$ pnpm run test
-
-# e2e tests
-$ pnpm run test:e2e
-
-# test coverage
-$ pnpm run test:cov
-```
+$ npm run test
 
 ## API Documentation
 
